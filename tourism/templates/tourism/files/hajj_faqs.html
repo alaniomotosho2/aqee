@@ -1,0 +1,589 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- i added this from source -->
+    <meta name="keywords" content="Aqibat,aqibat,tourist,tourism,Tourism,Tourist,hajj, Haj, umrah, umra, hajj umrah, umrah hajj, umrah packages, package umrah, hajj packages, Pilgrimage Hajj, Pilgrimage Mecca, Medina travel, Mecca Travel, umra tour, omrah, Hajj Travel, lagos,Abuja,Ilorin,Ibadan,Kano,Kaduna, nigeria, travel hajj, umrah travel, umra travel, hajj and umra, hajj tours, kano, abuja, hajj umra, umra packages,ilorin,ibadan umrah tours"/>
+    <meta name="description" content="Incorporated in 2016 as Aqibat Travels & Tourism Services"/>
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="Expires" content="never" />
+    <meta name="distribution" content="Global" />
+    <meta name="author" content="Mustapha aka vladPutin" />
+    <meta name="category" content="Find cheap and discount travel deals, flights and hotels that meet your budget. Book the best travel deals on flights, hotels and vacation packages" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Aqibat Travels &amp; Tours Limited: Leading eHajj and Umrah Operator</title>
+
+    <!-- Bootstrap -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+    <style type="text/css">
+            .table-wrapper{
+              height: 250px;
+              width: 100px;
+            }
+            .table-change{
+              width: 240px;
+              display: none;
+              position: absolute;
+              top: 5;
+              left: 25px;
+            }
+    </style>
+    <!--<link href="{% static "css/bootstrap-theme.min.css" %}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+        <!-- First Row -->
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-6">
+                <ul class="list-inline ">
+                    <li><a href="hajjguidelines.php" target="_top">Hajj Guidelines</a></li>
+                    <li><a href="{% url "about_us" %}" target="_top">About Us</a></li>
+                    <li><a href="{%  url "contact_us" %}" target="_top">Contact Us</a></li>
+                    <li><a href="http://www.al-abrartravels.com/webmail">Webmail</a></li>
+                </ul>
+                <!-- Nested email and Number insie top nav bar -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- <div><small>Call Us:<strong> +234 802 386 4448, 805 111 1063</strong></small></div> -->
+                        <ul class="list-inline ">
+                            <li><small>Call Us:<strong>+234 802 386 4448, 805 111 1063</strong></small></li>
+                            <li><small>Email Us:<a href="mailto:info@al-abrartravels.com"><strong>info@al-abrartravels.com</strong></a></small></li>
+                        </ul>
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- First Row ends here -->
+
+        <!-- Second Row -->
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+                <marquee behavior="scroll" truespeed="truespeed" scrolldelay="200" loop="forever" onMouseOver="this.setAttribute('scrollamount',0,0);this.stop();" onMouseOut="this.setAttribute('scrollamount',2,0);this.start();" scrollamount="3">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <<<<<>>>>>> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>-215</strong> Days left to Hajj 2016!  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <<<<<>>>>>> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>-316</strong> Days left to Ramadan 2014! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </marquee>
+            </div>
+        </div>
+        <!-- Second Row ends here -->
+
+        <!-- Third Row (Menu and Drop Down) -->
+        <div class="row" style="margin-bottom:0">
+            <div class="col-md-offset-1 col-md-10">
+                
+                <nav class="navbar navbar-inverse" role="navigation" style="margin-bottom:5px"> 
+                <!--<div class="navbar-header">-->
+                   <!--<a class="navbar-brand" href="#">Aqibat Travels</a> -->
+                <!--</div> -->
+                <div> 
+                    <ul class="nav navbar-nav "> 
+                        <li class="active">
+                            <a href="{% url "home_page" %}">Home</a>
+                        </li> 
+
+
+                          <li class="dropdown"> 
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Our Services <b class="caret"></b> </a> 
+                              <ul class="dropdown-menu"> 
+                                  <li><a href="#">Ticketing</a></li>
+                                  <li><a href="{% url "hotel_booking" %}">Hotel Booking</a></li> 
+                                  <li><a href="#">Car Hire Services</a></li> 
+                                  <li class="divider"></li>
+                                  <li><a href="{% url "visa" %}">Visa</a></li>
+                            </ul> 
+                        </li>
+
+                        <li class="dropdown"> 
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Hajj Packages <b class="caret"></b> </a> 
+                              <ul class="dropdown-menu"> 
+                                  <li><a href="{% url "hajj_package" %}">Hajj Packages</a></li>
+                                  <li><a href="{% url "hajj_intro" %}">Hajj Introduction</a></li> 
+                                  <li><a href="{% url "hajj_guides_tips" %}">Hajj Guide & Tips</a></li> 
+                                  <li class="divider"></li>
+                                  <li><a href="{% url "common_mistakes" %}">Common Mistakes in Hajj</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="{% url "hajj_tour_faqs" %}">Hajj Tour FAQs</a></li>
+                                  <li><a href="{% url "hajj_schedule" %}">Hajj Schedule</a></li>
+                                  <li><a href="{% url "hajj_booking_form" %}">Hajj Booking Form</a></li>
+                            </ul> 
+                        </li> 
+
+                        <li class="dropdown"> 
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Umrah Packages <b class="caret"></b> </a> 
+                              <ul class="dropdown-menu"> 
+                                  <li><a href="{% url "umrah_package" %}">Umrah Packages</a></li>
+                                  <li><a href="{% url "umrah_intro" %}">Umrah Introduction</a></li> 
+                                  <li><a href="#">Ramadhan Umrah Packages</a></li> 
+                                  <li class="divider"></li>
+                                  <li><a href="{% url "umrah_how" %}">How to Perform Umrah</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="{% url "umrah_booking_form" %}">Umrah Booking Form</a></li>
+                            </ul> 
+                        </li>
+
+                        <li class="dropdown"> 
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Booking Forms<b class="caret"></b> </a> 
+                              <ul class="dropdown-menu"> 
+                                  <li><a href="{% url "booking_form" %}">Booking Form</a></li>
+                                  <li><a href="{% url "hajj_interest_form" %}">Hajj Interest Form</a></li> 
+                                  <li><a href="{% url "umrah_interest_form" %}">Umrah Interest Form</a></li> 
+                                  <li class="divider"></li>
+                                  <li><a href="{% url "hajj_booking_form" %}">Hajj Booking Form</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="{% url "umrah_booking_form" %}">Umrah Booking Form</a></li> 
+                            </ul> 
+                        </li>
+                        <li><a href="{% url "membership" %}"> Membership</a></li> 
+                        <li><a href="{% url "media_gallery" %}">Media Gallery</a></li> 
+                        <li><a href="{% url "live_coverage" %}">Live Coverage</a></li> 
+                        <li><a href="{% url "islamic_tour" %}">Islamic Tours</a></li>
+                    </ul> 
+                </div> 
+            </nav>
+
+            </div>
+        </div>
+        <!-- Menu which is Thir row ens here -->
+
+        <!-- accorion row here -->
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Inicator -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="##myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li> 
+                        <li data-target="#myCarousel" data-slide-to="4"></li> 
+                        <li data-target="#myCarousel" data-slide-to="5"></li> 
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="{% static "img/hajj2015.png" %}" alt="" width="1200" border="0" height="100" />
+                            <div class="carousel-caption">
+                                Umurah 2015
+                            </div>
+                        </div>
+                        <div class="item">
+                          <img src="{% static "img/hajumrahads1.jpg" %}" alt="" width="1200" border="0" height="100" />
+                          <div class="carousel-caption">
+                            Umurah Head!
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img src="{% static "img/santa-fe-view.jpg" %}" alt="" width="1200" border="0" height="100" />
+                          <div class="carousel-caption">
+                            Santa Nice Picture!
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img src="{% static "img/seminar.jpg" %}" alt="" width="1200" border="0" height="100" />
+                          <div class="carousel-caption">
+                            Seminar Picture Rigth there!
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img src="{% static "img/wtm.jpg" %}" alt="" width="1200" border="0" height="100" />
+                          <div class="carousel-caption">
+                            WTM Folks!
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img src="{% static "img/seminar.jpg" %}" alt="" width="1200" border="0" height="100" />
+                          <div class="carousel-caption">
+                            Seminar again!
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                       &lsaquo;
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                       &rsaquo;
+                    </a>
+                  </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- row for social and client login -->
+        <div class="row">
+          <div class="col-md-offset-1 col-md-3">
+            <div style="margin-bottom:10px">
+                  <a href="http://twitter.com/AlabrarTravels"><img src="{% static "img/tw.png" %}"  width="30" height="30" alt="Al-Abrar on Twitter"/>
+                  <a href="http://www.facebook.com/AlabrarTravel"><img src="{% static "img/fb.png" %}"  width="30" height="30" alt="Al-Abrar on Facebook" /></a>
+                  <a href="http://www.youtube.com/user/AlabrarTravel"><img src="{% static "img/yb.png" %}" width="30" height="30" alt="Youtube" /></a>
+                  <a href="http://www.linkedin.com/in/AlabrarTravels"><img src="{% static "img/li.png" %}" width="30" height="30" /></a>
+                  <a href="http://www.flickr.com/photos/hajj2013/"><img src="{% static "img/fr.png" %}" width="30" height="30" alt="flicr" /></a>
+                  <a href="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"><img src="{% static "img/skyp.png" %}"  width="30" height="30" alt="Skype Me™!" /></a>
+              </div>
+          </div>
+
+          <div class="col-md-6">
+
+            <form class="form-inline well" role="form" style="padding:3px">
+              <div class="form-group">
+                <label class="sr-only" for="name">Username</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Name">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="name">Reservation Number</label>
+                <input type="text" class="form-control" id="name" placeholder="Reservation Number">
+              </div>
+            
+              <button type="submit" class="btn btn-success btn-active">Login</button>
+            </form>
+
+          </div>
+          <!-- forget reservation -->
+          <div class="col-md-1">
+            <a href="#"><small>Forget Reservation?</small></a>
+          </div>
+        </div>
+
+        <!-- end of scoial and client login row -->
+
+
+        <!-- another row for multiple stuff -->
+        <div class="row">
+          <div class="col-md-offset-1 col-md-3">
+                 <div class="panel panel-info" style="margin-bottom:5px">
+            <div class="panel-heading">
+                <span class="glyphicon glyphicon-list-alt"></span> Latest News And Events
+            </div>
+            <marquee id='scroll_news'  direction="up" scrolldelay="200" height="220" onMouseOver="this.setAttribute('scrollamount',0,0);this.stop();" onMouseOut="this.setAttribute('scrollamount',5,0);this.start();" scrollamount="5">
+              <div class="panel-body">
+                <table class="table table-hover"> <caption><em>Hajj 2016</em></caption> 
+                  <tbody> 
+                    <tr >
+                        <td><img src="{% static "images/1.png" %}" width="60" class="img-circle" /><small>Aqibat Managements wishes all the esteem pilgrims a pleasant trip to Mecca. May Allah accept our Hajj as an act of Ibada</small> <a class="btn btn-default btn-sm" role="button" href="#"> Read more</a></td>
+
+                    </tr> 
+                  </tbody> 
+                </table>
+                <table class="table table-hover"> <caption><em>Hajj Seminar 2016</em></caption> 
+                  <tbody>  
+                    <tr > 
+                      <td><img src="{% static "images/2.png" %}" width="60" class="img-circle" /><small>Aqibat is currently organizing a seminar for intending pilgrims towards the upcoming Hajj</small><a class="btn btn-default btn-sm" role="button" href="#"> Read more</a></td> 
+                    </tr>  
+                  </tbody> 
+                </table>
+
+                <table class="table table-hover"> <caption><em>Common Mistake in Hajj</em></caption> 
+                  <tbody>  
+                    <tr > 
+                      <td><img src="{% static "images/3.png" %}" width="60" class="img-circle" /><small>Common Mistake in Hajj, Some Pilgrims make such as their wrong concept in 'Aqeedah' (Islamic belief) relating to Hajj.In addition to their mistakes in Hajj rites as Tawaf, Sa'i, Shaving or trimming; 'Arafah, spending nigth in Minna and  Muzdalifah and stoning the jamaraat </small><a class="btn btn-default btn-sm" role="button" href="#"> Read more</a></td> 
+                    </tr>  
+                  </tbody> 
+                </table>
+
+                <table class="table table-hover"> <caption><em>Conference Of Imam Federation Chicago</em></caption> 
+                  <tbody>  
+                    <tr> 
+                      <td><img src="{% static "images/2.png" %}" width="60" class="img-circle" /><small>Chairman Aqibat Travels is on his way to Chicago for a conference of Imam federation between 2nd to 25th of November 2016 where he will meet colleagues of Imams for different countries to discuss Imamship challenges in the 21st centuary</small> <a class="btn btn-default btn-sm" role="button" href="#"> Read more</a></td> 
+                    </tr>  
+                  </tbody> 
+                </table>
+              </div>
+            </marquee>
+
+            </div>
+            <!-- nested bwlow latest new -->
+          <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-info" style="height:260px;margin-bottom:4px">
+                  <div class="panel-heading">
+                    <span class="glyphicon glyphicon-envelope"></span>Hajj and Umrah Advice
+                  </div>
+                  <div class="panel-body table-wrapper">
+                      <table class="table table-bordered table-change">
+                      <tbody>  
+                        <tr class="danger"> 
+                          <td><small>With million of pilgrims visiting Mecca and Medinah every year, facilities are now better than ever.It is very different to the Hajj and Umrah that our grand parents performed.Authorities work hard to make your pilgrimage as easy as possible. There are many free shower and washroom facilities. Cold water for drinking is available</small></td> 
+                        </tr>  
+                      </tbody> 
+                    </table>
+                    <table class="table table-bordered table-change">
+                      <tbody>  
+                        <tr class="warning"> 
+                          <td><small>Hotels offer all the luxuries you need to recooperate any lost energy. Transport is on par with what you would excpect from any major city.</small></td> 
+                        </tr>  
+                      </tbody> 
+                    </table>
+                    <table class="table table-bordered table-change">
+                      <tbody>  
+                        <tr class="active"> 
+                          <td><small>The climate ranges from between warm to very hot, depending on the time of the year. There is very little rainfall For this reason it is always best to think summer when packing </small></td> 
+                        </tr>  
+                      </tbody>
+                      </table> 
+                      <table class="table table-bordered table-change">
+                      <tbody>  
+                        <tr class="danger"> 
+                          <td><small>Remember what you are there for and try to spend as much of your time in remebrance of Allah (SWT).Engage in recitation and Dua. Try to attain as much knowledge as you can about the beauty of Islam while you are in this very special place. This way you will get the most rewarding experince for your pilgrimage </small></td> 
+                        </tr>  
+                      </tbody> 
+                    </table>
+                    <table class="table table-bordered table-change">
+                      <tbody>  
+                        <tr class="warning"> 
+                          <td><small>Although the authorities of Saudi Arabia do an excellent job in ensuring that Hajj and Umrah experience is as easy as possible, the pilgrimage itself is quite demanding and involves quite a lot of physical exertions. It is always good to perform it when in generally good health</small></td> 
+                        </tr>  
+                      </tbody> 
+                    </table>
+                  </div> 
+                </div>
+            </div>
+          </div>
+          <!--end nested below latest new -->
+
+          <!-- anoother row nested for ad1 -->
+          <div class="row">
+            <div class="col-md-12">
+              <div style="margin-bottom:4px" >
+                <img class="thumbnail" src="{%  static "img/had.jpg" %}" width="260" height="110" alt="" style="margin-bottom:4px" />
+              </div>
+            </div>
+          </div>
+          <!-- end of another nested row for ad1 -->
+
+          <!--a another nested for ad2 -->
+          <div class="row">
+            <div class="col-md-12">
+                  <a href="#"><img class="thumbnail" src="{%  static "img/hajjbook.jpg" %}" width="260" height="110" alt="" style="margin-bottom:4px"/></a>
+            </div>
+          </div>
+          <!-- end of another nested row for ad2 -->
+
+          <!-- last nested row for ad3 -->
+          <div class="row">
+            <div class="col-md-12">
+              <a href="onlinepay.php" target="_top"><img class="thumbnail" src="{% static "img/dwldbrochure.gif" %}" width="264" height="110" alt="Online Payment" /></a>
+            </div>
+          </div>
+          <!-- end of last nested row for ad3 -->
+
+
+          </div>
+          <!-- end of 1sst column -->
+
+          <!-- second column -->
+          <div class="col-md-7">
+            <h4 class="text-danger">
+              Hajj FAQs
+            </h4>
+
+            <!-- nested row inside hajj faqs -->
+            <div class="row">
+              <div class="col-md-12">
+                <h4 style="margin-bottom:0">Will anybody be escorting the Hajj group departing from the Nigeria?</h4>
+                <blockquote><small>
+                  Yes, about Seven to eight organisers will accompany the group when departing from the Nigeria and will return with the group. All our hajj escorts have many years of Hajj experience and are all fluent in English and some in Arabic.A team will also join us when we arrive in the Kingdom of Saudi Arabia, who have countless years of experience when approaching to arrange Hajj.</small>
+                </blockquote>
+
+                <h4 style="margin-bottom:0">Do you provide religious guides?</h4>
+                <blockquote><small>
+                  Yes we will try to arrange regular lectures whilst in the kingdom of Saudi Arabia, covering the rites of Hajj.</small>
+                </blockquote>
+
+                <h4 style="margin-bottom:0">How much money do I need to take with myself when travelling for Hajj?</h4>
+                <blockquote><small>
+                  We recommend that you take some thousand naira with you, just in case of emergencies.</small>
+                </blockquote>
+
+                <h4 style="margin-bottom:0">How much does it cost to purchase a meal in Makkah & Madinah?</h4>
+                <blockquote><small>
+                  An average meal costs roughly 20 Riyal which is roughly NGN840.00.</small>
+                </blockquote>
+
+                <h4 style="margin-bottom:0">What is the exchange rate?</h4>
+                <blockquote><small>
+                  Fifty Nigeria Naira (NGN) is roughly One Riyal (SAR).</small>
+                </blockquote>
+
+                <h4 style="margin-bottom:0">Is the foundation of money which I use for Hajj important?</h4>
+                <blockquote><small>
+                  We recommend that your money which will be used to pay for Hajj comes from a Halal source. As it is stated by the prophetic tradition, “Indeed Allah is pure and accepts only, that which is pure”.</small>
+                </blockquote>
+
+                <h4 style="margin-bottom:0">Is it possible for a non-Nigerian citizen to get a visa for Hajj?</h4>
+                <blockquote><small>
+                  Non Nigerian passport holders will only be given a Visa for Hajj who are on a work permit, Student Visa, Passports which with an indefinite stay who are reliant upon a Spouse when living within the Nigeria. Non-Nigerian passports that have a visit visa will not be guaranteed a Hajj visa.</small>
+                </blockquote>
+
+                <h4 style="margin-bottom:0">What is the last date for booking?</h4>
+                <blockquote><small>
+                  We do not publish a deadline to receive bookings as our capacity is limited therefore we sell upon a first come first served basis. Unfortunately it is impossible for us to receive extra bookings therefore we recommend you book as early as possible, as our packages are very popular in demand.</small>
+                </blockquote>
+
+                <h4 style="margin-bottom:0">Is it possible for myself to book a Haram view room in Makkah or Madinah?</h4>
+                <blockquote><small>
+                 All our bookings are usually standard hotel rooms for all our hotels. We can try to book you a Haram view but we cannot guarantee you.</small>
+                </blockquote>
+
+                <h4 style="margin-bottom:0">Is it possible to change the flight dates?</h4>
+                <blockquote><small>
+                 The flight dates are not changeable</small>
+                </blockquote>
+
+                <h4 style="margin-bottom:0">How can I get my clothes washed when staying in the hotels?</h4>
+                <blockquote><small>
+                 Near the hotels in Makkah & Madinah there are a lot of laundries located near the Harams. These laundries can usually wash and press your clothes in less than 24 hours, as you may contact any of our hajj organisers or the hotel reception about further information. Most of our 5 star hotels offer this service but it comes at an additional cost and significantly more costly.</small>
+                </blockquote>
+
+                <h4 style="margin-bottom:0">How will the men and woman be accommodated in Mina?</h4>
+                <blockquote><small>
+                 Men and woman stay in separate tents when coming to stay in Mina. The tents for men and woman are usually very close together.</small>
+                </blockquote>
+
+                <h4 style="margin-bottom:0">Is it possible for myself to contact my spouse?</h4>
+                <blockquote><small>
+                 Yes, this is achievable but under no condition may a pilgrim enter an opposite genders tent.</small>
+                </blockquote>
+
+                <h4 style="margin-bottom:0">What interpretation of Islam will be adopted?</h4>
+                <blockquote><small>
+                 All our planning for Hajj & Umrah is always according to the Quran and Sunnah. We do not follow any particular sector or school of thought.</small>
+                </blockquote>
+
+                <h4 style="margin-bottom:0">How will my sacrifice be arranged?</h4>
+                <blockquote><small>
+                 Cost of sacrifice is included in all our Hajj packages, but if an individual wishes to perform a Qurbani by themselves than this is possible as we will roughly subtract NGN16,000.00 from the price. However if an individual desires to do extra sacrifices then additional charges of NGN16,000.00 per sacrifice will apply. You will be given more information regarding this when entering the Kingdom of Saudi Arabia.</small>
+                </blockquote>
+
+                <h4 style="margin-bottom:0">Is it possible for myself to depart to another destination rather than coming back to the Nigeria?</h4>
+                <blockquote><small>
+                 This is not possible as all pilgrims must travel back to the Nigeria.</small>
+                </blockquote>
+
+                <h4 style="margin-bottom:0">Will I need to contact your office to book?</h4>
+                <blockquote><small>
+                 You will not need to visit our office as we can post you a full itinerary plan, however most our information is available on the website. All important documentation should be sent to our office using special delivery as we will also return the same documents using this principle.</small>
+                </blockquote>
+              </div>
+            </div>
+            <!-- end of nested row inside hajj faqs -->
+          </div>
+          <!-- second column or last column for this row --> 
+
+        </div>
+
+        <!-- end of multiple row -->
+        
+
+         <!-- partner animation row -->
+        <div class="row">
+            <div class="col-md-12">
+            <!--<marquee marquee id='scroll_news'  direction="left" scrolldelay="300" height="120" onMouseOver="this.setAttribute('scrollamount',0,0);this.stop();" onMouseOut="this.setAttribute('scrollamount',5,0);this.start();" scrollamount="5" >-->
+              <div class="well" >
+                  <img src="{% static "img/whuc.jpg" %}" width="97" height="34" alt="" /><img src="{% static "img/7.jpg" %}" width="52" height="35" alt="" /><img src="{% static "img/airblue.gif" %}" width="100" height="35" alt="" /><img src="{% static "img/fly-dubai.gif" %}" width="100" height="35" alt="" /><img src="{% static "img/gulf.gif" %}" width="100" height="35" alt="" /><img src="{% static "img/iata.jpg" %}" width="50" height="35" alt="" /><img src="{% static "img/cathay.gif" %}" width="100" height="35" alt="" /><img src="{% static "img/oman.gif" %}" width="90" height="35" alt="" /><img src="{% static "img/pia.gif" %}" width="85" height="35" alt="" /><img src="{% static "img/4.jpg" %}" width="51" height="35" alt="" /><img src="{% static "img/Qatar.gif" %}" width="77" height="35" alt="" /><img src="{% static "img/saudi-airlines.gif" %}" width="100" height="35" alt="" /><img src="{% static "img/srilanka.jpg" %}" width="35" height="35" alt="" /><img src="{% static "img/taap.gif" %}" width="65" height="35" alt="" /><img src="{% static "img/etihad.jpg" %}" width="46" height="35" alt="" /><img src="{% static "img/travelport.gif" %}" width="94" height="35" alt="" /><img src="{% static "img/air-arabia.gif" %}" width="100" height="35" alt="" /></div>
+            <!--</marquee>-->
+            </div>
+        </div>
+        <!-- partner animatio row ends here -->
+
+        <!-- footer row -->
+
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-inverse" role="navigation">
+              <div class="navbar-header"> <a class="navbar-brand" href="#">Aqibat Travels</a></div>
+              <div> 
+                <ul class="nav navbar-nav">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Islamic Info</a></li>
+                  <li><a href="#">Hajj Packages</a></li>
+                  <li><a href="#">Umrah Packages</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Media Gallery</a></li>
+                  <li><a href="#">Requirement</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                  <li></br><p >&copy;2016 Aqibat Travels &amp; Tours Ltd. All Rights Reserved.</p><br /></li>
+                  <li><a href="mailto:alaniomotosho@gmial.com" target="_blank">Contact Site Developer</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- footer row ends here -->
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="{% static "js/jquery-1.6.4.min.js" %}"></script>-->
+    <script type="text/javascript" src="{% static "js/jquery-2.2.3.min.js" %}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
+
+     <script type="text/javascript">
+      $(window).load(function() { //start after HTML, images have loaded
+ 
+    var InfiniteRotator =
+    {
+        init: function()
+        {
+            //initial fade-in time (in milliseconds)
+            var initialFadeIn = 1000;
+ 
+            //interval between items (in milliseconds)
+            var itemInterval = 15000;
+ 
+            //cross-fade time (in milliseconds)
+            var fadeTime = 2500;
+ 
+            //count number of items
+            var numberOfItems = $('.table-change').length;
+ 
+            //set current item
+            var currentItem = 0;
+ 
+            //show first item
+            $('.table-change').eq(currentItem).fadeIn(initialFadeIn);
+ 
+            //loop through the items
+            var infiniteLoop = setInterval(function(){
+                $('.table-change').eq(currentItem).fadeOut(fadeTime);
+ 
+                if(currentItem == numberOfItems -1){
+                    currentItem = 0;
+                }else{
+                    currentItem++;
+                }
+                $('.table-change').eq(currentItem).fadeIn(fadeTime);
+ 
+            }, itemInterval);
+        }
+    };
+ 
+    InfiniteRotator.init();
+ 
+});
+   </script>
+  </body>
+</html>
