@@ -84,3 +84,6 @@ def contact_us(request):
 
 def flight_booking(request):
 	return render(request,'tourism/files/flight_booking.html')
+
+def quote(request):
+	return render(request,'tourism/files/quote.html')

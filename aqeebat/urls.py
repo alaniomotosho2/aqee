@@ -46,6 +46,7 @@ urlpatterns = [
     url(r'^online-payment/$',"tourism.views.online_payment",name="online_payment"),
     url(r'^about-us/$',"tourism.views.about_us",name="about_us"),
     url(r'^contact-us/$',"tourism.views.contact_us",name="contact_us"),
+    url(r'^quote/$',"tourism.views.quote",name="quote"),
     url(r'^flight-booking/$',"tourism.views.flight_booking",name="flight_booking"),
     url(r'^tourism/', include('tourism.urls',namespace='tourism',app_name='tourism')),
 ]

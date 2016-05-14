@@ -103,7 +103,7 @@
                 <!--</div> -->
                 <div> 
                     <ul class="nav navbar-nav "> 
-                        <li>
+                        <li class="active">
                             <a href="{% url "home_page" %}">Home</a>
                         </li> 
 
@@ -119,7 +119,7 @@
                             </ul> 
                         </li>
 
-                        <li class="dropdown active"> 
+                        <li class="dropdown"> 
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Hajj Packages <b class="caret"></b> </a> 
                               <ul class="dropdown-menu"> 
                                   <li><a href="{% url "hajj_package" %}">Hajj Packages</a></li>
@@ -185,7 +185,7 @@
                         <li data-target="#myCarousel" data-slide-to="5"></li> 
                     </ol>
                     <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
+                   <div class="carousel-inner" role="listbox">
                         <div class="item active">
                             <img src="{% static "img/banner5.png" %}" alt="" width="1200" border="0" height="100" />
                             <div class="carousel-caption">
@@ -287,7 +287,7 @@
                 <table class="table table-hover"> <caption><em>Hajj 2016</em></caption> 
                   <tbody> 
                     <tr >
-                        <td><small>Aqibat Managements wishes all the esteem pilgrims a pleasant trip to Mecca. May Allah accept our Hajj as an act of Ibada</small> <a class="btn btn-default btn-sm" role="button" href="#"> Read more</a></td>
+                        <td><img src="{% static "images/1.png" %}" width="60" class="img-circle" /><small>Aqibat Managements wishes all the esteem pilgrims a pleasant trip to Mecca. May Allah accept our Hajj as an act of Ibada</small> <a class="btn btn-default btn-sm" role="button" href="#"> Read more</a></td>
 
                     </tr> 
                   </tbody> 
@@ -295,7 +295,7 @@
                 <table class="table table-hover"> <caption><em>Hajj Seminar 2016</em></caption> 
                   <tbody>  
                     <tr > 
-                      <td><small>Aqibat is currently organizing a seminar for intending pilgrims towards the upcoming Hajj</small><a class="btn btn-default btn-sm" role="button" href="#"> Read more</a></td> 
+                      <td><img src="{% static "images/2.png" %}" width="60" class="img-circle" /><small>Aqibat is currently organizing a seminar for intending pilgrims towards the upcoming Hajj</small><a class="btn btn-default btn-sm" role="button" href="#"> Read more</a></td> 
                     </tr>  
                   </tbody> 
                 </table>
@@ -303,7 +303,7 @@
                 <table class="table table-hover"> <caption><em>Common Mistake in Hajj</em></caption> 
                   <tbody>  
                     <tr > 
-                      <td><<small>Common Mistake in Hajj, Some Pilgrims make such as their wrong concept in 'Aqeedah' (Islamic belief) relating to Hajj.In addition to their mistakes in Hajj rites as Tawaf, Sa'i, Shaving or trimming; 'Arafah, spending nigth in Minna and  Muzdalifah and stoning the jamaraat </small><a class="btn btn-default btn-sm" role="button" href="#"> Read more</a></td> 
+                      <td><img src="{% static "images/3.png" %}" width="60" class="img-circle" /><small>Common Mistake in Hajj, Some Pilgrims make such as their wrong concept in 'Aqeedah' (Islamic belief) relating to Hajj.In addition to their mistakes in Hajj rites as Tawaf, Sa'i, Shaving or trimming; 'Arafah, spending nigth in Minna and  Muzdalifah and stoning the jamaraat </small><a class="btn btn-default btn-sm" role="button" href="#"> Read more</a></td> 
                     </tr>  
                   </tbody> 
                 </table>
@@ -311,7 +311,7 @@
                 <table class="table table-hover"> <caption><em>Conference Of Imam Federation Chicago</em></caption> 
                   <tbody>  
                     <tr> 
-                      <td><small>Chairman Aqibat Travels is on his way to Chicago for a conference of Imam federation between 2nd to 25th of November 2016 where he will meet colleagues of Imams for different countries to discuss Imamship challenges in the 21st centuary</small> <a class="btn btn-default btn-sm" role="button" href="#"> Read more</a></td> 
+                      <td><img src="{% static "images/2.png" %}" width="60" class="img-circle" /><small>Chairman Aqibat Travels is on his way to Chicago for a conference of Imam federation between 2nd to 25th of November 2016 where he will meet colleagues of Imams for different countries to discuss Imamship challenges in the 21st centuary</small> <a class="btn btn-default btn-sm" role="button" href="#"> Read more</a></td> 
                     </tr>  
                   </tbody> 
                 </table>
@@ -400,100 +400,329 @@
 
           <!-- second column -->
           <div class="col-md-7">
-            <h4 class="text-danger">
-              Hajj FAQs
+            <h4 class="text-danger">Online Quote</h4>
+            <p>
+              Please contact us for a full quotation in regards to your requirements, stating your period of pilgrimage stay in Mecca and Madinah and the number of passengers traveling.
+            </p>
+            <p>
+              The annual pilgrimage to Mecca is the largest annual pilgrimage in the world.Hotels are subject to change if they are fully booked and alternatives may be offered at time of booking.
+            </p>
+            <hr style="margin-top:0">
+            <h4>
+              Request Free Quote
             </h4>
+            <p>
+              Please describe the reason you are contacting us below <span style="color:red">*</span> indicates a required field 
+            </p>
 
-            <!-- nested row inside hajj faqs -->
-            <div class="row">
-              <div class="col-md-12">
-                <h4 style="margin-bottom:0">Will anybody be escorting the Hajj group departing from the Nigeria?</h4>
-                <blockquote><small>
-                  Yes, about Seven to eight organisers will accompany the group when departing from the Nigeria and will return with the group. All our hajj escorts have many years of Hajj experience and are all fluent in English and some in Arabic.A team will also join us when we arrive in the Kingdom of Saudi Arabia, who have countless years of experience when approaching to arrange Hajj.</small>
-                </blockquote>
 
-                <h4 style="margin-bottom:0">Do you provide religious guides?</h4>
-                <blockquote><small>
-                  Yes we will try to arrange regular lectures whilst in the kingdom of Saudi Arabia, covering the rites of Hajj.</small>
-                </blockquote>
 
-                <h4 style="margin-bottom:0">How much money do I need to take with myself when travelling for Hajj?</h4>
-                <blockquote><small>
-                  We recommend that you take some thousand naira with you, just in case of emergencies.</small>
-                </blockquote>
 
-                <h4 style="margin-bottom:0">How much does it cost to purchase a meal in Makkah & Madinah?</h4>
-                <blockquote><small>
-                  An average meal costs roughly 20 Riyal which is roughly NGN840.00.</small>
-                </blockquote>
 
-                <h4 style="margin-bottom:0">What is the exchange rate?</h4>
-                <blockquote><small>
-                  Fifty Nigeria Naira (NGN) is roughly One Riyal (SAR).</small>
-                </blockquote>
 
-                <h4 style="margin-bottom:0">Is the foundation of money which I use for Hajj important?</h4>
-                <blockquote><small>
-                  We recommend that your money which will be used to pay for Hajj comes from a Halal source. As it is stated by the prophetic tradition, “Indeed Allah is pure and accepts only, that which is pure”.</small>
-                </blockquote>
 
-                <h4 style="margin-bottom:0">Is it possible for a non-Nigerian citizen to get a visa for Hajj?</h4>
-                <blockquote><small>
-                  Non Nigerian passport holders will only be given a Visa for Hajj who are on a work permit, Student Visa, Passports which with an indefinite stay who are reliant upon a Spouse when living within the Nigeria. Non-Nigerian passports that have a visit visa will not be guaranteed a Hajj visa.</small>
-                </blockquote>
 
-                <h4 style="margin-bottom:0">What is the last date for booking?</h4>
-                <blockquote><small>
-                  We do not publish a deadline to receive bookings as our capacity is limited therefore we sell upon a first come first served basis. Unfortunately it is impossible for us to receive extra bookings therefore we recommend you book as early as possible, as our packages are very popular in demand.</small>
-                </blockquote>
 
-                <h4 style="margin-bottom:0">Is it possible for myself to book a Haram view room in Makkah or Madinah?</h4>
-                <blockquote><small>
-                 All our bookings are usually standard hotel rooms for all our hotels. We can try to book you a Haram view but we cannot guarantee you.</small>
-                </blockquote>
+            <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                      <label for="firstname" class="col-md-3 control-label"><small>First Name<span style="color:red">*</span></small></label>
+                      <div class="col-md-9"> <input type="text" class="form-control" id="firstname" placeholder="Enter First Name" required> </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="lastname" class="col-md-3 control-label"><small>Last Name<span style="color:red">*</span></small></label>
+                      <div class="col-md-9"> <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name" required> </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="address" class="col-md-3 control-label"><small>Address<span style="color:red">*</span></small></label>
+                      <div class="col-md-9"> <input type="text" class="form-control" id="address" placeholder="Enter Address" required> </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="city" class="col-md-3 control-label"><small>City</small></label>
+                      <div class="col-md-9"> <input type="text" class="form-control" id="city" placeholder="Enter Last Name" required> </div>
+                    </div>
 
-                <h4 style="margin-bottom:0">Is it possible to change the flight dates?</h4>
-                <blockquote><small>
-                 The flight dates are not changeable</small>
-                </blockquote>
+                    <div class="form-group">
+                      <label for="state" class="col-md-3 control-label"><small>State<span style="color:red">*</span></small></label>
+                      <div class="col-md-9">
+                        <select class="form-control" id="state" required>
+                          <option>Select State</option>
+                          <option>Abia</option><option>Abuja</option><option>Adamawa</option><option>Akwa-Ibom</option><option>Anambra</option>
+                          <option>Bauchi</option><option>Bayelsa</option><option>Benue</option><option>Borno</option><option>Cross River</option>
+                          <option>Delta</option><option>Ebonyi</option><option>Edo</option><option>Ekiti</option><option>Enugu</option>
+                          <option>Gombe</option><option>Imo</option><option>Jigawa</option><option>Kaduna</option><option>Kano</option>
+                          <option>Katsina</option><option>Kebbi</option><option>Kogi</option><option>Kwara</option><option>Lagos</option>
+                          <option>Nassarawa</option><option>Niger</option><option>Ogun</option><option>Ondo</option><option>Osun</option>
+                          <option>Overseas</option><option>Oyo</option><option>Plateau</option><option>River</option><option>Sokoto</option>
+                          <option>Taraba</option><option>Yobe</option><option>Zamfara</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email" class="col-md-3 control-label"><small>Email<span style="color:red">*</span></small></label>
+                      <div class="col-md-9"> <input type="email" class="form-control" id="email" placeholder="name@example.com" required> </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="mobile" class="col-md-3 control-label"><small>Phone Number<span style="color:red">*</span></small></label>
+                      <div class="col-md-9"> <input type="tel" class="form-control" id="mobile" placeholder="Enter Valid Mobile Number" required> </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="question" class="col-md-3 control-label"><small>Question regarding:</small></label>
+                      <div class="col-md-9">
+                        <select class="form-control" id="question" required>
+                          <option>--none--</option>
+                          <option>Hajj Packages</option><option>Umrah Packages</option><option>Fligth Only</option>
+                          <option>Booking Hotel</option><option>General Enquiry (list below)</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="adult" class="col-md-3 control-label"><small>Adults Travelling:</small></label>
+                      <div class="col-md-9">
+                        <select class="form-control" id="adult" required>
+                          <option>Select Please</option>
+                          <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                          <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                          <option>10+</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="children" class="col-md-3 control-label"><small>Children Travelling:</small></label>
+                      <div class="col-md-9">
+                        <select class="form-control" id="children" required>
+                          <option>0</option>
+                          <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                          <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                          <option>10+</option>
+                        </select>
+                      </div>
+                    </div>
 
-                <h4 style="margin-bottom:0">How can I get my clothes washed when staying in the hotels?</h4>
-                <blockquote><small>
-                 Near the hotels in Makkah & Madinah there are a lot of laundries located near the Harams. These laundries can usually wash and press your clothes in less than 24 hours, as you may contact any of our hajj organisers or the hotel reception about further information. Most of our 5 star hotels offer this service but it comes at an additional cost and significantly more costly.</small>
-                </blockquote>
+                    <div class="form-group ">
+                        <label for="children" class="col-md-3 control-label"><small>First Destination</small></label>
+                          <label class="checkbox-inline">
+                            <input type="radio" name="validdoc" id="yes" value="yes" checked>Makkah
+                          </label>
+                          <label class="checkbox-inline">
+                            <input type="radio" name="validdoc" id="no" value="no" >Medinah
+                          </label>
+                      </div>
+                      <div class="col-md-offset-3 col-md-9">
+                        <p>Please select the Hotels, Room Type and No. of Nights below</p>
+                      </div>
 
-                <h4 style="margin-bottom:0">How will the men and woman be accommodated in Mina?</h4>
-                <blockquote><small>
-                 Men and woman stay in separate tents when coming to stay in Mina. The tents for men and woman are usually very close together.</small>
-                </blockquote>
+                      <div class="form-group">
+                      <label for="children" class="col-md-3 control-label"><small>Hotels in Makkah</small></label>
+                      <div class="col-md-9">
+                        <select class="form-control" id="children" required>
+                          <option value="25" selected="selected">Makkah Hilton - Five Star</option>
+                              <option value="28">Dar Al Tawhid Intercontinental - Five Star</option>
+                              <option value="29">Huda Kareem - Four Star</option>
+                              <option value="30">Le Meridien - Five Star</option>
+                              <option value="31">Elaf Kindah - Five Star</option>
+                              <option value="32">Dar Al Nadwa - Four Star</option>
+                              <option value="33">Al Shohada - Five Star</option>
+                              <option value="34">Elaf Ajyad - Four Star</option>
+                              <option value="35">Elaf  Mashaer - Four Star</option>
+                              <option value="36">Bakkah Baity - Three Star</option>
+                              <option value="37">Al Massa Hotel - Four Star</option>
+                              <option value="38">Iman Inn Hotel - Three Star</option>
+                              <option value="51">Jawharat Bustan - Four Star</option>
+                              <option value="52">Rehab Al Firdous - Three Star</option>
+                              <option value="55">Rayhana Hotel - Economy</option>
+                              <option value="56">Wardat Kamil - Three Star</option>
+                              <option value="57">Rawabi Zam Zam Hotel - Three Star</option>
+                              <option value="58">Raffles Makkah Plaza - Five Star</option>
+                              <option value="59">Movenpick Hotel and Residence Hajar Tower - Five Star</option>
+                              <option value="60">Makkah Royal Clock Tower - Five Star</option>
+                              <option value="61">Al Oleyan Hotel - Four Star</option>
+                              <option value="62">Firdous Palace Hotel - Four Star</option>
+                              <option value="63">Grand Hijra Hotel - Four Star</option>
+                              <option value="64">Royal Dar Al Eiman - Five Star</option>
+                              <option value="65">Dar Al Eiman Grand - Four Star</option>
+                              <option value="67">Al Saraya Iman Hotel - Four Star</option>
+                              <option value="69">Al Misyal hotel - Three Star</option>
+                              <option value="70">Al Marwa Rotana - Five Star</option>
+                              <option value="71">Dar Al Manasek - Four Star</option>
+                              <option value="72">Elaf Al Sud - Four Star</option>
+                              <option value="73">Elaf Al Khalil - Four Star</option>
+                              <option value="74">Elaf Al Salam Hotel - Three Star</option>
+                              <option value="76">Fidous Tower - Five Star</option>
+                              <option value="77">Ramada Ajyad Hotel - Four Star</option>
+                              <option value="78">Makkah Grand Coral Hotel - Five Star</option>
+                              <option value="79">Nawazi Ajyad - Four Star</option>
+                              <option value="80">Dallah Ajyad - Four Star</option>
+                              <option value="81">Mercure Grand - Five Star</option>
+                        </select>
+                      </div>
+                    </div>
 
-                <h4 style="margin-bottom:0">Is it possible for myself to contact my spouse?</h4>
-                <blockquote><small>
-                 Yes, this is achievable but under no condition may a pilgrim enter an opposite genders tent.</small>
-                </blockquote>
 
-                <h4 style="margin-bottom:0">What interpretation of Islam will be adopted?</h4>
-                <blockquote><small>
-                 All our planning for Hajj & Umrah is always according to the Quran and Sunnah. We do not follow any particular sector or school of thought.</small>
-                </blockquote>
 
-                <h4 style="margin-bottom:0">How will my sacrifice be arranged?</h4>
-                <blockquote><small>
-                 Cost of sacrifice is included in all our Hajj packages, but if an individual wishes to perform a Qurbani by themselves than this is possible as we will roughly subtract NGN16,000.00 from the price. However if an individual desires to do extra sacrifices then additional charges of NGN16,000.00 per sacrifice will apply. You will be given more information regarding this when entering the Kingdom of Saudi Arabia.</small>
-                </blockquote>
+                    <div class="form-group">
+                      <label for="children" class="col-md-3 control-label"><small>Room Type</small></label>
+                      <div class="col-md-9">
+                        <select class="form-control" id="children" required>
+                          <option value="Double">Double</option>
+                              <option value="Quad" selected="selected">Quad</option>
+                              <option value="Single">Single</option>
+                              <option value="Triple">Triple</option>
+                        </select>
+                      </div>
+                    </div>
 
-                <h4 style="margin-bottom:0">Is it possible for myself to depart to another destination rather than coming back to the Nigeria?</h4>
-                <blockquote><small>
-                 This is not possible as all pilgrims must travel back to the Nigeria.</small>
-                </blockquote>
 
-                <h4 style="margin-bottom:0">Will I need to contact your office to book?</h4>
-                <blockquote><small>
-                 You will not need to visit our office as we can post you a full itinerary plan, however most our information is available on the website. All important documentation should be sent to our office using special delivery as we will also return the same documents using this principle.</small>
-                </blockquote>
-              </div>
-            </div>
-            <!-- end of nested row inside hajj faqs -->
+                    <div class="form-group">
+                      <label for="children" class="col-md-3 control-label"><small>No of Nights</small></label>
+                      <div class="col-md-9">
+                        <select class="form-control" id="children" required>
+                          <option value="5" selected="selected">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                        </select>
+                      </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                      <label for="children" class="col-md-3 control-label"><small>Hotels in Medinah</small></label>
+                      <div class="col-md-9">
+                        <select class="form-control" id="children" required>
+                          <option value="8" selected="selected">Medinah Oberoi - Five Star</option>
+                            <option value="24">Madinah Hilton - Five Star</option>
+                            <option value="41">Dar Al Taqwa - Five Star</option>
+                            <option value="42">Dar Al Hijra Intercontinental - Five Star</option>
+                            <option value="43">Dar Al Imaan Intercontinental - Five Star</option>
+                            <option value="44">Movenpick Anwar Al Madinah - Five Star</option>
+                            <option value="45">Al Harithyah Sheraton Hotel - Five Star</option>
+                            <option value="46">Dallah Madinah - Four Star</option>
+                            <option value="47">Dallah Taibah Hotel - Four Star</option>
+                            <option value="48">Elaf  Taiba - Four Star</option>
+                            <option value="49">Al Saha Al Safir - Four Star</option>
+                            <option value="50">Sheraton Karam - Four Star</option>
+                            <option value="53">Golden Mubarak - Three Star</option>
+                            <option value="54">Moubark Al-Salam - Three Star</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="children" class="col-md-3 control-label"><small>Room Type</small></label>
+                      <div class="col-md-9">
+                        <select class="form-control" id="children" required>
+                          <option value="Double">Double</option>
+                              <option value="Quad" selected="selected">Quad</option>
+                              <option value="Single">Single</option>
+                              <option value="Triple">Triple</option>
+                        </select>
+                      </div>
+                    </div>
+
+
+                    <div class="form-group">
+                      <label for="children" class="col-md-3 control-label"><small>Hotels in Makkah</small></label>
+                      <div class="col-md-9">
+                        <select class="form-control" id="children" required>
+                          <option value="25" selected="selected">Makkah Hilton - Five Star</option>
+                              <option value="28">Dar Al Tawhid Intercontinental - Five Star</option>
+                              <option value="29">Huda Kareem - Four Star</option>
+                              <option value="30">Le Meridien - Five Star</option>
+                              <option value="31">Elaf Kindah - Five Star</option>
+                              <option value="32">Dar Al Nadwa - Four Star</option>
+                              <option value="33">Al Shohada - Five Star</option>
+                              <option value="34">Elaf Ajyad - Four Star</option>
+                              <option value="35">Elaf  Mashaer - Four Star</option>
+                              <option value="36">Bakkah Baity - Three Star</option>
+                              <option value="37">Al Massa Hotel - Four Star</option>
+                              <option value="38">Iman Inn Hotel - Three Star</option>
+                              <option value="51">Jawharat Bustan - Four Star</option>
+                              <option value="52">Rehab Al Firdous - Three Star</option>
+                              <option value="55">Rayhana Hotel - Economy</option>
+                              <option value="56">Wardat Kamil - Three Star</option>
+                              <option value="57">Rawabi Zam Zam Hotel - Three Star</option>
+                              <option value="58">Raffles Makkah Plaza - Five Star</option>
+                              <option value="59">Movenpick Hotel and Residence Hajar Tower - Five Star</option>
+                              <option value="60">Makkah Royal Clock Tower - Five Star</option>
+                              <option value="61">Al Oleyan Hotel - Four Star</option>
+                              <option value="62">Firdous Palace Hotel - Four Star</option>
+                              <option value="63">Grand Hijra Hotel - Four Star</option>
+                              <option value="64">Royal Dar Al Eiman - Five Star</option>
+                              <option value="65">Dar Al Eiman Grand - Four Star</option>
+                              <option value="67">Al Saraya Iman Hotel - Four Star</option>
+                              <option value="69">Al Misyal hotel - Three Star</option>
+                              <option value="70">Al Marwa Rotana - Five Star</option>
+                              <option value="71">Dar Al Manasek - Four Star</option>
+                              <option value="72">Elaf Al Sud - Four Star</option>
+                              <option value="73">Elaf Al Khalil - Four Star</option>
+                              <option value="74">Elaf Al Salam Hotel - Three Star</option>
+                              <option value="76">Fidous Tower - Five Star</option>
+                              <option value="77">Ramada Ajyad Hotel - Four Star</option>
+                              <option value="78">Makkah Grand Coral Hotel - Five Star</option>
+                              <option value="79">Nawazi Ajyad - Four Star</option>
+                              <option value="80">Dallah Ajyad - Four Star</option>
+                              <option value="81">Mercure Grand - Five Star</option>
+                        </select>
+                      </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                      <label for="children" class="col-md-3 control-label"><small>Best time to contact</small></label>
+                      <div class="col-md-9">
+                        <select class="form-control" id="children" required>
+                          <option value="Anytime" selected="selected">Anytime </option>
+                        <option value="9am to 12pm">9am to 12pm </option>
+                        <option value="12pm to 3pm">12pm to 
+                          3pm </option>
+                        <option value="3pm to 6pm">3pm to 6pm </option>
+                        <option value="Evenings">Evenings </option>
+                        <option value="Weekends">Weekends </option>
+                        <option value="E-mail Only">E-mail Only </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="children" class="col-md-3 control-label"><small>Requirements/Enquery</small></label>
+                      <div class="col-md-9">
+                        <textarea class="form-control" rows="3" id="qcomment"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="col-md-12">
+                        <button type="submit" class="btn btn-success btn-block btn-active">Submit</button>
+                      </div>
+                    </div>
+                </form>
+
+
+            
           </div>
           <!-- second column or last column for this row --> 
 
@@ -512,11 +741,12 @@
             </div>
         </div>
         <!-- partner animatio row ends here -->
-    </div>
 
-    <!-- footer -->
+         </div>
 
-      <div class="row" style="background-color:darkslateblue;color:white">
+        <!-- footer row -->
+
+         <div class="row" style="background-color:darkslateblue;color:white">
 
           <footer>
             <div class="col-md-offset-1 col-md-3">
@@ -584,9 +814,8 @@
           </div>
 
         </div>
-
-      <!-- footer ends here -->
-
+        <!-- footer row ends here -->
+  
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
